@@ -3,3 +3,12 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+kernel:
+    resource: App\Kernel
+    type: attribute
+
+app_home:
+    path: /home
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\HomeController::index
