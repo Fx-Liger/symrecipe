@@ -9,6 +9,6 @@ kernel:
     type: attribute
 
 app_home:
-    path: /home
-    # the controller value has the format 'controller_class::method_name'
+    path: /
     controller: App\Controller\HomeController::index
+
