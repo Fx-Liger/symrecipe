@@ -41,7 +41,7 @@
 						<th scope="row">{{ ingredient.id }}</th>
 						<td>{{ ingredient.name }}</td>
 						<td>{{ ingredient.price }}</td>
-						<td>{{ ingredient.createdAt|date("m/d/Y")}}</td>
+						<td>{{ ingredient.createdAt|date("d/m/Y")}}</td>
                         <td><a href="{{ path('ingredient.edit', {id: ingredient.id}) }}" class ="btn btn-info">Modifier</td>
                         <td><a href="{{ path('ingredient.delete', {id: ingredient.id}) }}" class="btn btn-info">Supprimer</td>
 
